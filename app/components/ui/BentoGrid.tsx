@@ -5,7 +5,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./GridGlobe";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import { ShimmerButton } from "./ShimmerButton";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -102,17 +102,17 @@ export const BentoGridItem = ({
                     <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
                         {description}
                     </div>
-                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+                    <div className="font-sans font-bold text-xl md:text-xl lg:text-2xl max-w-96 z-10">
                         {title}
                     </div>
 
                     {id === 2 && <GridGlobe />}
 
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 opacity-25">
                             <div className="flex flex-col gap-3 lg:gap-8">
                                 {
-                                    ['React.js', 'Next.js', 'TypeScript'].map((item) =>
+                                    ['China', 'Vietnam', 'India', 'Indonesia' ].map((item) =>
                                     (
                                         <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                             {item}
@@ -124,7 +124,7 @@ export const BentoGridItem = ({
                             <div className="flex flex-col gap-3 lg:gap-8">
                                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
                                 {
-                                    ['View.js', 'AWS', 'OpenAI'].map((item) =>
+                                    ['Cambodia', 'Bangladesh', 'Pakistan', 'Malaysia',].map((item) =>
                                     (
                                         <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                             {item}
@@ -133,22 +133,35 @@ export const BentoGridItem = ({
                                 }
                                 
                             </div>
+                            <div className="flex flex-col gap-3 lg:gap-8">
+                                {
+                                    ['Thailand','Myanmar', 'Singapore','Philippines'].map((item) =>
+                                        (
+                                            <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                            {item}
+                                        </span>
+                                    ))
+                                }
+                                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
+                                
+                            </div>
                         </div>
                     )}
 
                     {id === 6 && (
                         <div className="mt-5 relative">
                             <div className={`absolute -bottom-8 right-0`}>
-                                <Lottie options={{
-                                    loop: copied,
-                                    autoplay: copied,
-                                    animationData: animationData,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }} />
+                                <Lottie 
+                                    loop={copied ? 1: 0}
+                                    autoplay={copied}
+                                    animationData={animationData}
+                                    // rendererSettings: {
+                                    //     preserveAspectRatio: "xMidYMid slice",
+                                    // },
+                                // }} 
+                                />
                                 <ShimmerButton
-                                title={copied ? "Email copied": "Copy my email"}
+                                title={copied ? "Email copied": "Copy Email"}
                                 icon={<IoCopyOutline />}
                                 position='left'
                                 handleClick={handleCopy}

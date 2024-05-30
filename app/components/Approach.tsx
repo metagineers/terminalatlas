@@ -7,23 +7,20 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 const Approach = () => {
   return (
     <section className="w-full py-20">
-        <h1 className="heading">My <span className="text-purple">approach</span></h1>
+        <h1 className="heading">Our <span className="text-purple">Process</span></h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Planning & Strategy" icon={<AceternityIcon order="Phase 1"  />} des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements.">
+        <Card title="Concept and Design" icon={<AceternityIcon order="Phase 1"  />} 
+        des="In this initial phase, we collaborate with our clients to bring their ideas to life. Our expert team works closely with you to refine concepts and create detailed designs that align with market trends and consumer needs. We leverage our industry knowledge and creative skills to ensure that each product is innovative, functional, and visually appealing.">
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            containerClassName="bg-emerald-500"
           />
         </Card>
         <Card 
-            title="Development & Progress Update"
+            title="Supplier Identification & Sample Evaluation"
             icon={<AceternityIcon order="Phase 2"
         />}
-        des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+        des="Once the concept and design are finalized, we move on to identifying the best suppliers. Our extensive network across the 12 diffferent countries in Asia allows us to source high-quality manufacturers. We conduct thorough audits to ensure reliability and performance, and provide sample evaluation services to compare different options and select the best products for our clients."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -38,11 +35,9 @@ const Approach = () => {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card 
-            title="Development & Launch"
+            title="Quality Assurance & Market Introduction"
             icon={<AceternityIcon order="Phase 3"
-        />} des="This is where the magic happens! Based on the approved design, 
-        I'll translate everything into functional code, building your website
-        from the ground up.">
+        />} des="The final phase focuses on ensuring that the products meet the highest standards of quality and are ready for the market. We offer comprehensive quality assurance services, including production monitoring, during production inspections, pre-shipment inspections, and factory audits. Our goal is to ensure that every product not only meets but exceeds expectations. Once quality is assured, we assist with the market introduction, leveraging our expertise in e-commerce and social media platforms to maximize reach and impact.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -96,9 +91,9 @@ const Card = ({
         <h2 className="dark:text-white text-3xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
-        <h2 style={{color: '#e4ecff'}} className="dark:text-white text-center text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <p style={{color: '#e4ecff'}} className="dark:text-white text-center text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-normal group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {des}
-        </h2>
+        </p>
       </div>
     </div>
   );

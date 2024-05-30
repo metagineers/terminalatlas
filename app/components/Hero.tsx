@@ -23,10 +23,17 @@ const Hero = () => {
             </div>
             <div className='flex justify-center relative my-20 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                    <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic Web Magic with Next.js</h2>
-                    <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless User Experiences' />
-                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl'>Hi, I&apos;m Dzulkiflee, an AI Startup Founder based in London</p>
-                    <a href='#about'><ShimmerButton title='Show My Work' icon={<FaLocationArrow />} position='right' /></a>
+                    <div className='flex'>
+                            <img
+                                src="/transparentLogo.svg"
+                                alt="logo"
+                                className="h-[50vw] md:h-[30vw] -mb-20"
+                            />
+                    </div>
+                    {/* <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Highlife Leisure Ltd</h2> */}
+                    <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Introducing Innovative Products for Home and Leisure' />
+                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl'>Welcome to Highlife Leisure, Leaders in Cutting-Edge Home and Leisure Innovations</p>
+                    <a href='#about'><ShimmerButton title='Explore Our Innovations' icon={<FaLocationArrow />} position='right' /></a>
                 </div>
 
             </div>
