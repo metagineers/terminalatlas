@@ -6,7 +6,7 @@ import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
     return (
-        <div className='pb-20 pt-36'>
+        <div className='pb-20 pt-16 md:pt-36'>
             <div>
                 {/**
                  *  UI: Spotlights
@@ -27,7 +27,7 @@ const Hero = () => {
                             <img
                                 src="/transparentLogo.svg"
                                 alt="logo"
-                                className="h-[50vw] md:h-[30vw] -mb-20"
+                                className="h-[50vw] md:h-[30vw]"
                             />
                     </div>
                     {/* <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Highlife Leisure Ltd</h2> */}
