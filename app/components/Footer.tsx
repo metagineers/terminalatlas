@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex flex-col items-center'>
             <h1 className='heading lg:max-w-[45vw]'>Ready to <span className='text-purple'>Experience</span> the Latest in Home and Leisure Innovation?</h1>
             <p className='text-white-500 md:mt-10 my-5'>Reach out to us today and let&apos;s discuss how we can help bring in the next innovative product for you.</p>
-            <a href="mailto:dzulkiflee@me.com">
+            <a href="mailto:sales@highlifeleisure.co.uk">
                 <ShimmerButton title="Lets get in touch" icon={<FaLocationArrow />} position="right" />
             </a>
         </div>
