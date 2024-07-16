@@ -6,8 +6,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "High Life Leisure",
-  description: "Global Distributor and Retailer Of High Quality Products",
+  title: "Terminal Atlas",
+  description: "Terminal Atlas is a groundbreaking animated series that explores the intersection of technology, humanity, and the unknown. Follow our diverse cast of characters as they navigate a world where virtual and physical realities collide, uncovering mysteries that span across dimensions."
 };
 
 export default function RootLayout({
