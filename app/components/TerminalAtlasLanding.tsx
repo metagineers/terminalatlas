@@ -40,7 +40,7 @@ const TerminalAtlasLanding = () => {
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-4">About the Show</h2>
           <p className="text-lg mb-4">
-            Terminal Atlas is a groundbreaking animated series that explores the intersection of technology, 
+            Terminal Atlas is one of the most groundbreaking animated series that explores the intersection of technology, 
             humanity, and the unknown. Follow our diverse cast of characters as they navigate a world where 
             virtual and physical realities collide, uncovering mysteries that span across dimensions.
           </p>
