@@ -59,7 +59,7 @@ const TerminalAtlasLanding = () => {
             <CardContent className="pt-6">
               <Star className="h-12 w-12 mb-4 text-yellow-500" />
               <h3 className="text-xl font-semibold mb-2">Award-Winning Team</h3>
-              <p>Created by the minds behind critically acclaimed animated hits.</p>
+              <p>Created by the a buncha people.</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 border-gray-700">
